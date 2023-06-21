@@ -1,0 +1,10 @@
+miniapp-preview/
+.idea/
+.vscode/
+node_modules
+.tmp
+build
+dist
+docs
+es
+lib

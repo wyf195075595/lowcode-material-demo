@@ -1,0 +1,47 @@
+.hover-panel {
+  width: 440px;
+  height: 172px;
+  margin: 10px;
+  border-radius: 8px;
+  background-color: #F6F7F9;
+  padding: 18px 24px;
+  position: relative;
+  &:hover {
+    box-shadow: 0 8px 24px 0 rgba(0,121,242,0.40);
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #0079F2;
+  }
+  &:hover .left-img {
+    opacity: 1;
+  }
+  &:hover .title, &:hover .discription{
+    color: white;
+  }
+  .left-img {
+    position: absolute;
+    bottom: 14px;
+    right: 0px;
+    width: 102px;
+    height: 128px;
+    // background-image: url(https://tianshu.alicdn.com/c2e0a8a2-9b6a-48b5-ba85-9b77ce16a89e.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: bottom right;
+    opacity: 0;
+    transition: .3s;
+  }
+  .title {
+    font-size: 18px;
+    color: #1F1F1F;
+    line-height: 27px;
+    margin-bottom: 12px;
+    font-weight: bolder;
+  }
+  .discription {
+    font-size: 14px;
+    color: #79889B;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+}
